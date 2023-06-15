@@ -75,7 +75,7 @@ CONFIG_SCHEMA = climate.CLIMATE_SCHEMA.extend(
 
 def validate_uart(config):
     uart.final_validate_device_schema(
-        "tcc_link", baud_rate=2400, require_rx=True, require_tx=False
+        "tcc_link", baud_rate=9600, require_rx=True, require_tx=False
     )(config)
 
 
